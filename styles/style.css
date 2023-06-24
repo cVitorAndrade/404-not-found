@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Space mono', sans-serif;
+}
+
+:root {
+    font-size: 62.5%;
+    --gray-1: #333333;
+    --gray-1-hover: #4d4d4d;
+    --gray-2: #4f4f4f;
+    --fc-footer: #bdbdbd;
+    --footer-a-hover: #df5f09;
+}
+
+body {
+    padding: 2rem 2.4rem 2.4rem;
+    font-size: 1.6rem;
+}
+
+main {
+    display: grid;
+    place-content: center;
+    margin: 6.4rem 0 11.4rem;
+}
+
+header {
+    color: var(--gray-1);
+    font-weight: 700;
+    font-size: 2.4rem;
+    font-family: 'Inconsolata', sans-serif;
+    line-height: 2.5rem;
+    letter-spacing: -8%;
+}
+
+
+img {
+    max-width: 28.6rem;
+}
+
+.text-wrapper h1 {
+    font-size: 4.6rem;
+    font-weight: 700;
+    color: var(--gray-1);
+    max-width: 35rem;
+    word-wrap: break-word;
+}
+
+.text-wrapper p {
+    text-align: left;
+    font-size: 2.4rem;
+    line-height: 3.5rem;
+    letter-spacing: -3.5%;
+    color: var(--gray-2);
+    max-width: 35rem;
+    margin: 3rem 0 6.6rem;
+    word-wrap: break-word;
+}
+
+.text-wrapper button {
+    border: none;
+    padding: 2.4rem 4.3rem;
+    background: var(--gray-1);
+    color: #FFF;
+    font-weight: 700;
+    font-size: 1.4rem;
+    line-height: 2rem;
+    letter-spacing: -3.5%;
+}
+
+.text-wrapper button:hover {
+    cursor: pointer;
+    background: var(--gray-1-hover);
+}
+
+footer {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 1.4rem;
+    text-align: center;
+    color: var(--fc-footer);
+}
+
+footer a {
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--fc-footer);
+    transition: color .3s;
+}
+
+footer a:hover {
+    color: var(--footer-a-hover);
+    font-weight: 700;
+}
+
+@media (min-width: 880px) {
+    body {
+        padding: 4rem 7rem 2.4rem;
+    }
+    
+    main {
+        display:flex;
+        gap: 10rem;
+        max-width: 1200px;
+        margin: 15rem auto 17rem;
+    }
+
+    img {
+        max-width: clamp(30rem, 40rem, 56rem);
+    }
+
+    .text-wrapper p,
+    .text-wrapper h1 {
+        word-wrap: normal;
+    }
+}
